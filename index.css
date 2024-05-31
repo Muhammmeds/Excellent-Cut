@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+html ,body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    min-height: 60px;
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+header {
+    height: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav ul li {
+    margin-left: 20px;
+    list-style: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+nav ul {
+    position: absolute;
+    right: 20px;
+}
+nav p {
+    position: absolute;
+    left: 65px;
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    display: inline-block;
+    text-decoration: underline;
+}
+nav ul li .icon{
+    display: none;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 0px 12px 0px 12px;
+    font-family: 'Alkatra', cursive;
+    border-radius: 50px;
+    transition: 0.5;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid gray;
+}
+nav ul li:hover{
+    transform: scale(1.1);
+}
+.menudetails {
+    display: none;
+    position: relative;
+    top: -15px;
+    background-color: black;
+    width: 85%;
+    transform: 0.5s;
+    border-bottom-right-radius: 25px;
+    z-index: 2;
+    box-shadow: 2px 2px 10px 3px black;
+}
+.menudetails ul li a {
+    font-family: 'Merriweather', serif;
+    white-space: nowrap;
+    margin-left: 5px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    letter-spacing: 4px;
+}
+.menudetails .text {
+    position: relative;
+    left: 10px;
+}
+.menudetails ul li a ion-icon{
+    position: relative;
+    top: 4px;
+}
+.menudetails ul {
+    margin-left: -25px;
+    line-height: 2.3;
+}
+ main {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-radius: 50px;
+    position: relative;
+}
+main img {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    filter: blur(0.3px);
+}
+.haircuts{
+    box-sizing: border-box;
+    width: 95vw;
+    padding: 0px 10px 0px 55px;
+    height: fit-content;
+}
+.haircutheading {
+    word-spacing: 3px;
+    letter-spacing: 5px;
+    font-size: 60px;
+    text-decoration: underline;
+    font-weight: 800;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    margin-bottom: -5px;
+    margin-top: -2px;
+}
+.haircuts img {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    transition: 0.3s;
+}
+.haircuts div {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    height: 350px;
+    width: 31%;
+    border: 2px solid black;
+    border-radius: 40px;
+
+}
+.haircuts img:hover {
+    transform: scale(1.2);
+}
+.prices{
+    margin: 10px auto;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px 2px gray;
+}
+.prices p:nth-of-type(1){
+    text-decoration: underline;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: -10px;
+
+}
+.prices p:nth-of-type(2){
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+
+}
+footer {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 280px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer div {
+    width: 33%;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+}
+footer .address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+footer .address p:nth-of-type(1){
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: 'Satisfy', cursive;
+    margin-top: 40px;
+    margin-bottom: -15px;
+}
+footer .address p:nth-of-type(2){
+    font-family: 'Rowdies', cursive;
+    font-size: 18px;
+}
+footer .address p span{
+    position: relative;
+    top: -4px;
+    left: 4px;
+
+}
+footer .contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .contact p:nth-of-type(1) {
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: 'Satisfy', cursive;
+}
+footer .contact p:nth-of-type(1) span {
+    position: relative;
+    top: -5px;
+    left: 3px;
+}
+footer .contact p:nth-of-type(2){
+    margin-top: -10px;
+    font-weight: 400;
+    margin-left: 5px;
+    font-family: 'Rowdies', cursive;
+
+}
+footer .contact a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+
+}
+footer .contact button{
+    position: relative;
+    left: 10px;
+    padding: 2px 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+}
+footer .contact button:hover{
+    transform: scale(1.1);
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+footer .openingdays{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+footer .openingdays ul {
+    line-height: 1.2;
+    list-style: square;
+}
+
+footer .openingdays ul p {
+    text-decoration: underline;
+    font-family: 'Satisfy', cursive;
+
+}
+footer .openingdays ul li {
+    word-spacing: 10px;
+    font-family: 'Rowdies', cursive;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+footer .address:hover, footer .openingdays:hover  {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+
+@media screen and (max-width : 1120px) {
+    nav ul li a{
+        font-size: 15px;
+
+    }
+    nav ul {
+        position: absolute;
+        right: 10px;
+    }
+    nav ul li {
+        margin-left: 10px;
+    }
+    
+    .menudetails {
+     display: none;   
+    }
+    .menudetails ul li  a {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    nav ul li a{
+        display: none;
+    }
+    nav ul li .icon{
+        display: block;
+        font-size: 35px;
+        font-weight: 800;
+        position: relative;
+        left: -35px;
+    }
+}
+
+@media screen and (max-width : 580px) {
+    nav p {
+        position: absolute;
+        left: 5px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width : 490px) {
+    nav ul li .icon{
+        position: relative;
+        left: -5px;
+    } 
+}
+
+@media screen and (max-width: 1245px) {
+    .haircuts div{
+        width: 27%;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 1185px) {
+    .haircuts div{
+        width: 23%;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .haircuts {
+        width: 100vw;
+        padding: 10px;
+    }
+    .menudetails ul li a{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width : 580px){
+    .haircutheading {
+        font-size: 30px;
+    }
+    .haircuts div{
+        width: 95%;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width : 960px) {
+    footer .openingdays ul li {
+        font-size: 10px;
+        line-height: 1;
+    }
+    
+    footer .contact p:nth-of-type(2){
+        margin-left: -15px;
+    }
+    
+}
+@media screen and (max-width : 830px) {
+    footer{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .openingdays ul li{
+        font-size: 15px;
+    }
+    footer div{
+        width: 90%;
+    }
+    footer .address p:nth-of-type(2){
+        font-family: 'Merriweather', serif;
+        ;
+    }
+    footer .contact p:nth-of-type(2) {
+        font-family: 'Merriweather', serif;
+    }
+
+    footer .openingdays ul li {
+        font-family: 'Merriweather', serif;
+    }
+    footer .openingdays p {
+        position: relative;
+        left: 30px;
+    }
+
+}
+
+
+
+
